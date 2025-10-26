@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à la Formation pour les Directeurs (Gérants) des Agences de Voyages et Tourisme</title>
+    <!-- Lien vers le fichier CSS externe (si tu veux séparer ; sinon, supprime-le et mets le CSS en ligne) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chargement d'EmailJS (version 3, une seule fois) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Initialisation d'EmailJS (une seule fois)
+        (function(){
+            emailjs.init({
+                publicKey: "OJx_0tWLdm4S37O39",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Inscription à la Formation pour les Directeurs (Gérants) des Agences de Voyages et Tourisme</h1>
+        <p>Remplissez le formulaire ci-dessous pour vous inscrire à cette formation spécialisée.</p>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="nom">Nom <span style="color: red;">*</span> :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom <span style="color: red;">*</span> :</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Numéro de téléphone <span style="color: red;">*</span> :</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail <span style="color: red;">*</span> :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="fonction">Fonction <span style="color: red;">*</span> :</label>
+                <input type="text" id="fonction" name="fonction" required>
+            </div>
+            <div class="form-group">
+                <label for="nom_agence">Nom de l'agence <span style="color: red;">*</span> :</label>
+                <input type="text" id="nom_agence" name="nom_agence" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse_agence">Adresse de l'agence <span style="color: red;">*</span> :</label>
+                <textarea id="adresse_agence" name="adresse_agence" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="wilaya">Wilaya (Ville) <span style="color: red;">*</span> :</label>
+                <input type="text" id="wilaya" name="wilaya" required>
+            </div>
+            <button type="submit" class="btn">S'inscrire</button>
+        </form>
+        <div id="message"></div>
+        <p class="note">Note : Veuillez remplir tous les champs requis avant d'envoyer votre inscription.</p>
+    </div>
+    <!-- Lien vers le fichier JS externe -->
+    <script src="script.js"></script>
+</body>
+</html>
