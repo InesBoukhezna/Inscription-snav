@@ -33,7 +33,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     };
 
     // Envoie l'e-mail via EmailJS
-    emailjs.send("snav_inscription", "snav_inscription", formData)  
+    emailjs.send("snav.estalgerie@gmail.com", "snav.estalgerie@gmail.com", formData)  
         .then(function(response) {
             document.getElementById('message').innerHTML = '<p style="color: green;">Inscription réussie ! Un e-mail a été envoyé.</p>';
             document.getElementById('registrationForm').reset();  // Réinitialise le formulaire
